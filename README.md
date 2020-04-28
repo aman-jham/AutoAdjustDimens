@@ -1,4 +1,4 @@
-Auto Adjust Dimens, Scalable Dimension
+Auto Adjust Scalable Dimension Library
 ========================================
 
 [![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
@@ -6,18 +6,18 @@ Auto Adjust Dimens, Scalable Dimension
 [ ![Download](https://api.bintray.com/packages/amanjham/com.auto.adjust/dimens/images/download.svg?version=1.0.8) ](https://bintray.com/amanjham/com.auto.adjust/dimens/1.0.8/link)
 <br>
 
-[![Twitter](https://img.shields.io/badge/Twitter-@AmanJham-blue.svg?style=flat)](https://twitter.com/amanjhaml)
+[![Twitter](https://img.shields.io/badge/Twitter-@AmanJham-blue.svg?style=flat)](https://twitter.com/amanjham)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/091df1fb4fbd47b9be970fd7bd1e0e6c)](https://www.codacy.com/manual/aman-jham/AutoAdjustDimens?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aman-jham/AutoAdjustDimens&amp;utm_campaign=Badge_Grade)
 
-This is an Android project allowing to realize a circular ImageView in the simplest way possible.
+This is an Android library allowing to auto adjust the density pixels. From positive 1 to 600
 
 USAGE
 -----
 
-To make a circular ImageView add CircularImageView in your layout XML and add CircularImageView library in your project or you can also grab it via Gradle:
+To use this library in your project Using Android Studio and Gradle:
 
 ```groovy
-implementation 'com.auto.adjust:dimens:1.0.7'
+implementation 'com.auto.adjust:dimens:1.0.8'
 ```
 
 XML
@@ -25,21 +25,28 @@ XML
 
 ```xml
 
+          android:layout_width="@dimen/_100adp"
+          android:layout_height="@dimen/_100adp"
+          android:padding="@dimen/_8adp"
+          android:margin="@dimen/_8adp"
+
 ```
 
-You must use the following properties in your XML to change your CircularImageView.
+You must use the following properties in your XML.
 
-| Properties                       | Type                                                         | Default          |
-| -------------------------------- | ------------------------------------------------------------ | ---------------- |
-| `app:civ_circle_color`           | color                                                        | WHITE            |
-| `app:civ_circle_color_start`     | color                                                        | civ_circle_color |
+| Properties                       | Description                                                  |
+| -------------------------------- | ------------------------------------------------------------ |
+| `@dimen/_100adp`                 | For positive dimens                                          |
+| `@dimen/_100_minus_adp`          | For negative dimens                                          |
 
-:information_source: You can also use `android:elevation` instead of `app:civ_shadow` to have default Material Design elevation.
+
 
 KOTLIN
 -----
 
 ```kotlin
+
+       resources.getDimensionPixelSize(R.dimen._100adp)
 
 ```
 
@@ -48,10 +55,42 @@ JAVA
 
 ```java
 
+       getResources().getDimensionPixelOffset(R.dimen._100adp);
+
 ```
 
-LIMITATIONS
+    +---------+-------------+---------------+-------------+--------------------+
+    | Unit    | Description | Units Per     | Density     | Same Physical Size |
+    |         |             | Physical Inch | Independent | On Every Screen    |
+    +---------+-------------+---------------+-------------+--------------------+
+    | px      | Pixels      | Varies        | No          | No                 |
+    +---------+-------------+---------------+-------------+--------------------+
+    | in      | Inches      | 1             | Yes         | Yes                |
+    +---------+-------------+---------------+-------------+--------------------+
+    | mm      | Millimeters | 25.4          | Yes         | Yes                |
+    +---------+-------------+---------------+-------------+--------------------+
+    | pt      | Points      | 72            | Yes         | Yes                |
+    +---------+-------------+---------------+-------------+--------------------+
+    | dp      | Density     | ~160          | Yes         | No                 |
+    |         | Independent |               |             |                    |
+    |         | Pixels      |               |             |                    |
+    +---------+-------------+---------------+-------------+--------------------+
+    | sp      | Scale       | ~160          | Yes         | No                 |
+    |         | Independent |               |             |                    |
+    |         | Pixels      |               |             |                    |
+    +---------+-------------+---------------+-------------+--------------------+
+    | adp     | Auto        | ~160          | Yes         | Yes                |
+    |         | Density     |               |             |                    |
+    |         | Independent |               |             |                    |
+    |         | Pixels      |               |             |                    |
+    +---------+-------------+---------------+-------------+--------------------+
+
+
+More info can be also be found in the [Google Design Documentation](https://www.google.com/design/spec/layout/units-measurements.html#).
+
+LIMITATION
 -----
+Use it carefully! for example, in most cases you still need to design a different layout for tablets.
 
 SUPPORT ❤️
 -----
@@ -63,4 +102,4 @@ And [**follow me**](https://github.com/aman-jham?tab=followers) for my next crea
 LICENCE
 -----
 
-Auto-Adjust-Dimension by [Aman Jham](https://raztechnology.com/) is licensed under a [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+Auto-Adjust-Dimension by [Aman Jham](https://www.linkedin.com/in/aman-jham-9436276a/) is licensed under a [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).

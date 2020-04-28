@@ -7,7 +7,6 @@ Auto Adjust Dimens, Scalable Dimension
 <br>
 
 [![Twitter](https://img.shields.io/badge/Twitter-@AmanJham-blue.svg?style=flat)](https://twitter.com/amanjhaml)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/57b73cd8e4b242389acf4341b7ca7269)]([![Codacy Badge](https://api.codacy.com/project/badge/Grade/091df1fb4fbd47b9be970fd7bd1e0e6c)](https://www.codacy.com/manual/aman-jham/AutoAdjustDimens?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aman-jham/AutoAdjustDimens&amp;utm_campaign=Badge_Grade))
 
 This is an Android project allowing to realize a circular ImageView in the simplest way possible.
 

@@ -46,7 +46,7 @@ KOTLIN
 
 ```kotlin
 
-       resources.getDimensionPixelSize(R.dimen._100adp)
+resources.getDimensionPixelSize(R.dimen._100adp)
 
 ```
 
@@ -55,9 +55,12 @@ JAVA
 
 ```java
 
-       getResources().getDimensionPixelOffset(R.dimen._100adp);
+getResources().getDimensionPixelOffset(R.dimen._100adp);
 
 ```
+
+COMPARISION
+-----
 
     +---------+-------------+---------------+-------------+--------------------+
     | Unit    | Description | Units Per     | Density     | Same Physical Size |

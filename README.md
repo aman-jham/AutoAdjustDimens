@@ -9,7 +9,7 @@ Auto Adjust Scalable Dimension Library
 [![Twitter](https://img.shields.io/badge/Twitter-@AmanJham-blue.svg?style=flat)](https://twitter.com/amanjham)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/091df1fb4fbd47b9be970fd7bd1e0e6c)](https://www.codacy.com/manual/aman-jham/AutoAdjustDimens?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aman-jham/AutoAdjustDimens&amp;utm_campaign=Badge_Grade)
 
-This is an Android library allowing to auto adjust the density pixels. From positive 1 to 600
+This is an Android library allowing to auto adjust the density pixels.
 
 USAGE
 -----

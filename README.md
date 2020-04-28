@@ -11,10 +11,6 @@ Auto Adjust Dimens, Scalable Dimension
 
 This is an Android project allowing to realize a circular ImageView in the simplest way possible.
 
-<a href="https://play.google.com/store/apps/details?id=com.mikhaellopez.lopspower">
-  <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
-</a>
-
 USAGE
 -----
 
@@ -28,15 +24,7 @@ XML
 -----
 
 ```xml
-<com.mikhaellopez.circularimageview.CircularImageView
-    android:layout_width="250dp"
-    android:layout_height="250dp"
-    android:src="@drawable/image"
-    app:civ_border_color="#3f51b5"
-    app:civ_border_width="4dp"
-    app:civ_shadow="true"
-    app:civ_shadow_radius="10"
-    app:civ_shadow_color="#3f51b5"/>
+
 ```
 
 You must use the following properties in your XML to change your CircularImageView.
@@ -52,58 +40,14 @@ KOTLIN
 -----
 
 ```kotlin
-val circularImageView = findViewById<CircularImageView>(R.id.circularImageView)
-circularImageView.apply {
-    // Set Color
-    circleColor = Color.WHITE
-    // or with gradient
-    circleColorStart = Color.BLACK
-    circleColorEnd = Color.RED
-    circleColorDirection = CircularImageView.GradientDirection.TOP_TO_BOTTOM
 
-    // Set Border
-    borderWidth = 10f
-    borderColor = Color.BLACK
-    // or with gradient
-    borderColorStart = Color.BLACK
-    borderColorEnd = Color.RED
-    borderColorDirection = CircularImageView.GradientDirection.TOP_TO_BOTTOM
-
-    // Add Shadow with default param
-    shadowEnable = true
-    // or with custom param
-    shadowRadius = 7f
-    shadowColor = Color.RED
-    shadowGravity = CircularImageView.ShadowGravity.CENTER
-}
 ```
 
 JAVA
 -----
 
 ```java
-CircularImageView circularImageView = findViewById(R.id.circularImageView);
-// Set Color
-circularImageView.setCircleColor(Color.WHITE);
-// or with gradient
-circularImageView.setCircleColorStart(Color.BLACK);
-circularImageView.setCircleColorEnd(Color.RED);
-circularImageView.setCircleColorDirection(CircularImageView.GradientDirection.TOP_TO_BOTTOM);
 
-// Set Border
-circularImageView.setBorderWidth(10f);
-circularImageView.setBorderColor(Color.BLACK);
-// or with gradient
-circularImageView.setBorderColorStart(Color.BLACK);
-circularImageView.setBorderColorEnd(Color.RED);
-circularImageView.setBorderColorDirection(CircularImageView.GradientDirection.TOP_TO_BOTTOM);
-
-// Add Shadow with default param
-circularImageView.setShadowEnable(true);
-// or with custom param
-circularImageView.setShadowRadius(7f);
-circularImageView.setShadowColor(Color.RED);
-circularImageView.setShadowGravity(CircularImageView.ShadowGravity.CENTER);
 ```
 
 LIMITATIONS

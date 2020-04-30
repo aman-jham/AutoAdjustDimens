@@ -25,15 +25,16 @@ XML
 
 ```xml
 
-          android:layout_width="@dimen/_100adp"
+android:layout_width="@dimen/_100adp"
          
-          android:layout_height="@dimen/_100adp"
+android:layout_height="@dimen/_100adp"
          
-          android:padding="@dimen/_8adp"
+android:padding="@dimen/_8adp"
          
-          android:margin="@dimen/_8adp"
+android:margin="@dimen/_8adp"
 
-          android:textSize="@dimen/_11asp"
+android:textSize="@dimen/_11asp"
+
 
 ```
 

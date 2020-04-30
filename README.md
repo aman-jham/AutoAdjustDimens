@@ -17,7 +17,7 @@ USAGE
 To use this library in your project Using Android Studio and Gradle:
 
 ```groovy
-implementation 'com.auto.adjust:dimens:1.0.8'
+implementation 'com.auto.adjust:dimens:1.0.9'
 ```
 
 XML
@@ -30,6 +30,10 @@ XML
           android:padding="@dimen/_8adp"
           android:margin="@dimen/_8adp"
 
+For TextView  use asp dimens
+
+          android:textSize="@dimen/_11asp"
+
 ```
 
 You must use the following properties in your XML.
@@ -38,6 +42,7 @@ You must use the following properties in your XML.
 | -------------------------------- | ------------------------------------------------------------ |
 | `@dimen/_100adp`                 | For positive dimens                                          |
 | `@dimen/_100_minus_adp`          | For negative dimens                                          |
+| `@dimen/_11asp`                  | For text sizes                                               |
 
 
 
@@ -47,6 +52,7 @@ KOTLIN
 ```kotlin
 
 resources.getDimensionPixelSize(R.dimen._100adp)
+resources.getDimensionPixelSize(R.dimen._11asp)
 
 ```
 
@@ -56,6 +62,7 @@ JAVA
 ```java
 
 getResources().getDimensionPixelOffset(R.dimen._100adp);
+getResources().getDimensionPixelOffset(R.dimen._11asp);
 
 ```
 
@@ -84,6 +91,11 @@ COMPARISION
     +---------+-------------+---------------+-------------+--------------------+
     | adp     | Auto        | ~160          | Yes         | Yes                |
     |         | Density     |               |             |                    |
+    |         | Independent |               |             |                    |
+    |         | Pixels      |               |             |                    |
+    +---------+-------------+---------------+-------------+--------------------+
+    | asp     | Auto        | ~160          | Yes         | Yes                |
+    |         | Scale       |               |             |                    |
     |         | Independent |               |             |                    |
     |         | Pixels      |               |             |                    |
     +---------+-------------+---------------+-------------+--------------------+

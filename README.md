@@ -1,4 +1,4 @@
-<img src=https://raw.githubusercontent.com/aman-jham/AutoAdjustDimens/master/assets/autoadjust.jpg >
+<img src=https://raw.githubusercontent.com/aman-jham/AutoAdjustDimens/master/assets/autoadjustdimen.jpg >
 
 Auto Adjust Scalable Dimension Library
 ========================================
@@ -36,7 +36,6 @@ android:padding="@dimen/_8adp"
 android:margin="@dimen/_8adp"
 
 android:textSize="@dimen/_11asp"
-
 
 ```
 

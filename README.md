@@ -1,4 +1,4 @@
-<img alt="Logo" src="autoadjustdimen.jpg"  />
+<img alt="Logo" src="assets/autoadjustdimen.jpg"  />
 
 Auto Adjust Scalable Dimension Library
 ========================================

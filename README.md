@@ -1,4 +1,4 @@
-<img src=https://raw.githubusercontent.com/aman-jham/AutoAdjustDimens/master/assets/autoadjustdimen.jpg >
+<img alt="Logo" src="autoadjustdimen.jpg"  />
 
 Auto Adjust Scalable Dimension Library
 ========================================

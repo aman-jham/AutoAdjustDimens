@@ -120,4 +120,4 @@ And [**follow me**](https://github.com/aman-jham?tab=followers) for my next crea
 LICENCE
 -----
 
-Auto-Adjust-Dimension by [Aman Jham](https://www.linkedin.com/in/aman-jham-9436276a/) is licensed under a [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+Auto Adjust Dimension Android Kotlin Library by [Aman Jham](https://www.linkedin.com/in/aman-jham-9436276a/) is licensed under a [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).

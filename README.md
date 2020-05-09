@@ -41,7 +41,7 @@ android:textSize="@dimen/_11asp"
 
 You must use the following properties in your XML.
 
-| Properties                       | Description                                                  |
+| Properties                       | Descriptions                                                  |
 | -------------------------------- | ------------------------------------------------------------ |
 | `@dimen/_100adp`                 | For positive dimens                                          |
 | `@dimen/_100_minus_adp`          | For negative dimens                                          |
